@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textmasukannama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/masukkan_nama"
+        android:layout_marginBottom="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/etnamatext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName|textCapWords"
+        android:hint="Masukkan Nama"
+        android:layout_marginBottom="20dp"
+        />
+    
+    <Button
+        android:id="@+id/btntampiltext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tampilkan"
+        android:layout_below="@+id/etnamatext"
+        android:onClick="tampilkan"
+        />
+
+</LinearLayout>
